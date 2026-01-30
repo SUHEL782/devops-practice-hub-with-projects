@@ -3,15 +3,15 @@
 ![AWS](https://imgur.com/b9iHwVc.png)
 
 ### TABLE OF CONTENTS
-1. [Goal](https://github.com/SUHEL782/devops-practice-hub-with-projects/tree/main/DevOps%20Project-01.md#goal)
-2. [Pre-Requisites](https://github.com/SUHEL782/devops-practice-hub-with-projects/tree/main/DevOps%20Project-01.md#pre-requisites)
-3. [Pre-Deployment](https://github.com/SUHEL782/devops-practice-hub-with-projects/tree/main/DevOps%20Project-01.md#pre-deployment)
-4. [VPC Deployment](https://github.com/SUHEL782/devops-practice-hub-with-projects/tree/main/DevOps%20Project-01.md#vpc-deployment)
-5. [Maven (Build)](https://github.com/SUHEL782/devops-practice-hub-with-projects/tree/main/DevOps%20Project-01.md#maven-build)
-6. [3-Tier Architecture](https://github.com/SUHEL782/devops-practice-hub-with-projects/tree/main/DevOps%20Project-01.md#3-tier-architecture)
-7. [Application Deployment](https://github.com/SUHEL782/devops-practice-hub-with-projects/tree/main/DevOps%20Project-01.md#application-deployment)
-8. [Post-Deployment](https://github.com/SUHEL782/devops-practice-hub-with-projects/tree/main/DevOps%20Project-01.md#post-deployment)
-9. [Validation](https://github.com/SUHEL782/devops-practice-hub-with-projects/tree/main/DevOps%20Project-01.md#validation)
+1. [Goal](#goal)
+2. [Pre-Requisites](#pre-requisites)
+3. [Pre-Deployment](#pre-deployment)
+4. [VPC Deployment](#vpc-deployment)
+5. [Maven (Build)](#maven-build)
+6. [3-Tier Architecture](#3-tier-architecture)
+7. [Application Deployment](#application-deployment)
+8. [Post-Deployment](#post-deployment)
+9. [Validation](#validation)
 ---
 
 ![3-tier application](https://imgur.com/3XF0tlJ.png)
