@@ -21,8 +21,8 @@ Follow these steps to deploy the Two-Tier architecture:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/DevCloudNinjas/DevOps-Projects
-   cd DevOps-Projects/DevOps Project-11/
+   git clone https://github.com/SUHEL782/devops-practice-hub-with-projects.git
+   cd DevOps Project-02
    ```
 
 2.  **Plan and Apply:**
@@ -74,7 +74,4 @@ These project highlights showcase the comprehensive AWS services integrated into
 
 Feel free to contribute and adapt this project to suit your needs. We welcome your ideas and improvements.
 
-## License
 
-
-![](https://imgur.com/ZdiaMeo.gif)
