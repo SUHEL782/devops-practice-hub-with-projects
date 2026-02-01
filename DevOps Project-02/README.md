@@ -1,8 +1,5 @@
 # Two-Tier AWS Infrastructure with Terraform
-[![LinkedIn](https://img.shields.io/badge/Connect%20with%20me%20on-LinkedIn-blue.svg)](https://www.linkedin.com/in/lionel-tchami/)
-[![GitHub](https://img.shields.io/github/stars/DevCloudNinjas.svg?style=social)](https://github.com/DevCloudNinjas)
-[![AWS](https://img.shields.io/badge/AWS-%F0%9F%9B%A1-orange)](https://aws.amazon.com)
-[![Terraform](https://img.shields.io/badge/Terraform-%E2%9C%A8-lightgrey)](https://www.terraform.io)
+
 
 ![two-tier](https://imgur.com/X4dGBg6.gif)
 
