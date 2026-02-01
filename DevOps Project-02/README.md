@@ -63,14 +63,12 @@ When done the exploration, run the following to destroy the infrastructure
 These project highlights showcase the comprehensive AWS services integrated into the Two-Tier architecture, providing a solid foundation for your applications with security, scalability, and performance at the forefront.
 
 
-## Detailed Guide
 
-For an in-depth walkthrough of the project, check out the detailed guide on [Hashnode](https://devcloudninjas.hashnode.dev/deploy-two-tier-architecture-on-aws-using-terraform).
 
 ## Connect with Me
 
-- GitHub: [GitHub Profile](https://github.com/DevCloudNinjas)
-- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/lioneltchami/)
+- GitHub: [GitHub Profile](https://github.com/SUHEL782)
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/devops-engineer1/)
 
 ## Contributions
 
@@ -78,6 +76,5 @@ Feel free to contribute and adapt this project to suit your needs. We welcome yo
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
 
 ![](https://imgur.com/ZdiaMeo.gif)
