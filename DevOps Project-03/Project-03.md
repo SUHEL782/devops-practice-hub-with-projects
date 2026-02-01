@@ -3,18 +3,17 @@
 ![AWS-Cloud](https://imgur.com/AXD50yl.png)
 
 ### TABLE OF CONTENTS
-1. [Goal](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-02/Project-02.md#goal)
-2. [Pre-Requisites](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-02/Project-02.md#pre-requisites)
-3. [Pre-Deployment](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-02/Project-02.md#pre-deployment)
-4. [VPC Deployment](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-02/Project-02.md#vpc-deployment)
-5. [Validation](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-02/Project-02.md#validation)
-
+1. [Goal](#goal)
+2. [Pre-Requisites](#pre-requisites)
+3. [Pre-Deployment](#pre-deployment)
+4. [VPC Deployment](#vpc-deployment)
+5. [Validation](#validation)
 ## Goal
 Deploy a Modular and Scalable Virtual Network Architecture with Amazon VPC.
 
 ## Pre-Requisites
 1. You must be having an [AWS account](https://aws.amazon.com/) to create infrastructure resources on AWS cloud.
-2. [Source Code](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-02/html-web-app)
+2. [Source Code](https://github.com/SUHEL782/devops-practice-hub-with-projects/tree/main/DevOps%20Project-03)
 
 ## Pre-Deployment
 Customize the application dependencies mentioned below on AWS EC2 instance and create the Golden AMI.
@@ -57,7 +56,6 @@ Customize the application dependencies mentioned below on AWS EC2 instance and c
 # Hit the Star! ⭐
 ***If you are planning to use this repo for learning, please hit the star. Thanks!***
 
-#### Author by [DevCloud Ninjas](https://github.com/DevCloudNinjas)
+#### Author by [Suhel khan]
 
 
-![](https://imgur.com/ZdiaMeo.gif)
