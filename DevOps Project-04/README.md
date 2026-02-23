@@ -1,50 +1,149 @@
-# Implementation of the Entire Advanced CI/CD Pipeline with Major DevOps Tools
+This project demonstrates the end-to-end implementation of a complete CI/CD pipeline using modern DevOps tools and practices including Terraform, Ansible, Jenkins, SonarQube, JFrog, Docker, Kubernetes (EKS), Prometheus, and Grafana.
 
-![devops](https://imgur.com/WcCpKVU.png)
+⚙️ Step-by-Step Implementation
+🔹 1. Infrastructure Provisioning (Terraform)
 
-### These are the steps I followed in the implementation of the entire CI/CD Pipeline.
+Created:
 
-1. [Provisioned the required infrastructure like VPC, Security Group, Ansible Controller Instance, Jenkins Master and Agent Instances using Terraform.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step1.md#L1)
+VPC
 
-2. [Configured SSH keys for password less authentication between Ansible Controller and Agent nodes.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step2.md#L1)
+Security Groups
 
-3. [Configured the Jenkins Master and Agent nodes using Ansible. Configured Jenkins Agent as the Maven Build server.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step3.md#L1)
+Ansible Controller
 
-4. [Added Jenkins Agent node's credentials in Jenkins Master to establish a connection between Jenkins Master and Agent nodes.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step4.md#L1)
+Jenkins Master & Agent Nodes
 
-5. [Added GitHub credentials to the Jenkins Master and created Multibranch Pipeline job.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step5.md#L1)
+Automated provisioning using Terraform
 
-6. [Configured the Multibranch Pipeline job with GitHub Webhook Trigger with the help of Multibranch Scan Webhook Trigger Plugin.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step6.md#L1)
+🔹 2. SSH Configuration
 
-7. **SonarQube:**
-    1. [Generated an access token in SonarCloud and added SonarQube server credentials in Jenkins Master.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step7.md#L3)
-    2. [Installed Sonarqube scanner plugin.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step7.md#L64)
-    3. [Added Sonarqube server to the Jenkins Master in System section.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step7.md#L100)
-    4. [Added Sonarqube scanner to the Jenkins Master in Tools section.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step7.md#L140)
-    5. [Configured an organization and project in SonarCloud and wrote a sonar-project. properties file.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step7.md#L174)
-    6. [Added sonarqube, unit tests and build stages in the Jenkinsfile.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step7.md#L236)
+Configured passwordless SSH authentication
 
-8. [Added JFrog credentials in the Jenkins Master and integrated JFrog artifactory with Jenkins by installing Artifactory plugin in Jenkins Master.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step8.md#L1)
+Enabled seamless communication between:
 
-9. [Created a Docker Image out of the jar file and committed that Docker Image into the Docker repository of the JFrog artifactory with the help of Docker Pipeline plugin. Added the Docker Build and Publish stage in Jenkinsfile.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step9.md#L1)
+Ansible Controller
 
-10. **EKS:**
-    1. [Provisioned the EKS cluster with Terraform.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step10.md#L3)
-    2. [Installed kubectl in Jenkins Slave.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step10.md#L69)
-    3. [Installed AWS CLI v2 in Jenkins Slave to connect with AWS account.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step10.md#L125)
-    4. [Downloaded Kubernetes credentials and cluster configuration from the cluster using the command](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step10.md#L181)
-    5. `aws eks update-kubeconfig --region <region_name> --name <cluster_name>` 
+Jenkins Nodes
 
-11. [Pulled the Docker Image from the JFrog artifactory using Kubernetes secret and deployed it in our EKS cluster using deployment resource and exposed it to access from outside using service resource under a particular namespace. Added the deployment stage in Jenkinsfile.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step11.md#L1)
+🔹 3. Jenkins Setup (via Ansible)
 
-12. [Added the Prometheus helm chart repository and implemented the cluster monitoring using Prometheus and Grafana.](https://github.com/DevCloudNinjas/DevOps-Projects/blob/master/DevOps%20Project-06/Steps/step12.md#L1) 
-    * Note: Changed the default service type of Prometheus and Grafana services from ClusterIP to LoadBalancer to access them from the browser.
----
+Installed & configured:
 
-# Hit the Star! ⭐
-***If you are planning to use this repo for learning, please hit the star. Thanks!***
+Jenkins Master
 
-#### Author by [DevCloud Ninjas](https://github.com/DevCloudNinjas)
-    
+Jenkins Agent
 
-![](https://imgur.com/ZdiaMeo.gif)
+Configured Agent as Maven Build Server
+
+🔹 4. Jenkins Master-Agent Integration
+
+Added Agent credentials in Jenkins Master
+
+Established secure communication between nodes
+
+🔹 5. GitHub Integration
+
+Added GitHub credentials in Jenkins
+
+Created Multibranch Pipeline Job
+
+🔹 6. Webhook Automation
+
+Configured GitHub Webhook Trigger
+
+Used Multibranch Scan Webhook Plugin
+
+Enabled automatic pipeline execution on code push
+
+🔍 7. SonarQube (Code Quality & Security)
+
+Generated SonarCloud Token
+
+Configured SonarQube in Jenkins
+
+Installed required plugins
+
+Added:
+
+Code Analysis Stage
+
+Unit Testing Stage
+
+Build Stage
+
+Created sonar-project.properties
+
+📦 8. JFrog Artifactory Integration
+
+Integrated Jenkins with JFrog Artifactory
+
+Stored build artifacts securely
+
+🐳 9. Docker Build & Push
+
+Built Docker image from .jar
+
+Pushed image to JFrog Artifactory Docker Repo
+
+Automated using Jenkins Pipeline
+
+☸️ 10. Kubernetes (EKS Setup)
+
+Provisioned EKS Cluster using Terraform
+
+Installed:
+
+kubectl
+
+AWS CLI v2
+
+Connected cluster using:
+
+aws eks update-kubeconfig --region <region> --name <cluster>
+🚀 11. Deployment on Kubernetes
+
+Pulled Docker image from Artifactory
+
+Created:
+
+Deployment
+
+Service (LoadBalancer)
+
+Used Kubernetes Secrets for secure image pull
+
+Deployed application in EKS
+
+📊 12. Monitoring (Prometheus + Grafana)
+
+Installed via Helm
+
+Configured:
+
+Prometheus for metrics
+
+Grafana for visualization
+
+Changed service type to LoadBalancer for external access
+
+🎯 Key Highlights
+
+✔ End-to-End CI/CD Automation
+✔ Infrastructure as Code (Terraform)
+✔ Configuration Management (Ansible)
+✔ Code Quality (SonarQube)
+✔ Artifact Management (JFrog)
+✔ Containerization (Docker)
+✔ Orchestration (Kubernetes - EKS)
+✔ Monitoring (Prometheus + Grafana)
+
+⭐ Support
+
+If you found this project helpful for learning DevOps:
+
+👉 Don’t forget to Star ⭐ the repository
+
+🔗 Connect with Me
+
+👨‍💻 Suhel Khan
+💼 DevOps & Cloud Enthusiast
