@@ -1,6 +1,6 @@
 This project demonstrates the end-to-end implementation of a complete CI/CD pipeline using modern DevOps tools and practices including Terraform, Ansible, Jenkins, SonarQube, JFrog, Docker, Kubernetes (EKS), Prometheus, and Grafana.
 
-⚙️ Step-by-Step Implementation
+ Step-by-Step Implementation
 🔹 1. Infrastructure Provisioning (Terraform)
 
 Created:
@@ -55,7 +55,7 @@ Used Multibranch Scan Webhook Plugin
 
 Enabled automatic pipeline execution on code push
 
-🔍 7. SonarQube (Code Quality & Security)
+ 7. SonarQube (Code Quality & Security)
 
 Generated SonarCloud Token
 
@@ -73,13 +73,13 @@ Build Stage
 
 Created sonar-project.properties
 
-📦 8. JFrog Artifactory Integration
+ 8. JFrog Artifactory Integration
 
 Integrated Jenkins with JFrog Artifactory
 
 Stored build artifacts securely
 
-🐳 9. Docker Build & Push
+ 9. Docker Build & Push
 
 Built Docker image from .jar
 
@@ -87,7 +87,7 @@ Pushed image to JFrog Artifactory Docker Repo
 
 Automated using Jenkins Pipeline
 
-☸️ 10. Kubernetes (EKS Setup)
+ 10. Kubernetes (EKS Setup)
 
 Provisioned EKS Cluster using Terraform
 
@@ -100,7 +100,7 @@ AWS CLI v2
 Connected cluster using:
 
 aws eks update-kubeconfig --region <region> --name <cluster>
-🚀 11. Deployment on Kubernetes
+11. Deployment on Kubernetes
 
 Pulled Docker image from Artifactory
 
@@ -114,7 +114,7 @@ Used Kubernetes Secrets for secure image pull
 
 Deployed application in EKS
 
-📊 12. Monitoring (Prometheus + Grafana)
+ 12. Monitoring (Prometheus + Grafana)
 
 Installed via Helm
 
@@ -146,4 +146,4 @@ If you found this project helpful for learning DevOps:
 🔗 Connect with Me
 
 👨‍💻 Suhel Khan
-💼 DevOps & Cloud Enthusiast
+ DevOps & Cloud Enthusiast
