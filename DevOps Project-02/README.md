@@ -1,7 +1,7 @@
 # Two-Tier AWS Infrastructure with Terraform
 
 
-![two-tier](https://imgur.com/)
+
 
 ## Overview
 
